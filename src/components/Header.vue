@@ -37,7 +37,7 @@
           <li
             v-for="item in menuList"
             :key="item.name"
-            class="text-white py-2 px-3 mr-14 hover:bg-[#7A7A7A] duration-200 cursor-pointer"
+            class="text-white py-2 px-3 mr-14 hover:bg-[#7A7A7A] duration-200 cursor-pointer last:mr-0"
           >
             {{ item.name }}
           </li>
