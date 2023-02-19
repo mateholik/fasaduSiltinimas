@@ -1,0 +1,18 @@
+$hamburger-layer-color: #222;
+$hamburger-active-layer-color: #222;
+$hamburger-active-hover-opacity: 1;
+$hamburger-layer-height: 2px;
+$hamburger-layer-width: 20px;
+$hamburger-layer-border-radius: 0;
+@import 'node_modules/hamburgers/_sass/hamburgers/hamburgers';
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+// body {
+//   background-color: green;
+// }
