@@ -58,5 +58,6 @@
         </div>
       </div>
     </section>
+    <WhyUs class="py-14 md:py-24" />
   </div>
 </template>
