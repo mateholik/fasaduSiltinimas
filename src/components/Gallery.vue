@@ -1,5 +1,5 @@
 <template>
-  <section class="py-14 md:py-24 bg-[#0000000a]">
+  <section class="bg-[#0000000a]">
     <div class="container">
       <h2
         class="font-semibold text-2xl md:text-[40px] md:leading-normal mb-6 md:mb-16 uppercase"
