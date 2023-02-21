@@ -25,7 +25,9 @@
             </li>
           </ul>
         </div>
-        <img class="mx-auto md:w-1/2" src="/img/about.jpeg" alt="apie mus" />
+        <div class="-mx-4 md:mx-auto md:w-1/2">
+          <img class="w-full" src="/img/about.jpeg" alt="apie mus" />
+        </div>
       </div>
     </div>
   </section>

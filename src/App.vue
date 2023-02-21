@@ -4,5 +4,6 @@
     <Hero />
     <AboutUs />
     <WhyUs class="py-14 md:py-24" />
+    <Services />
   </div>
 </template>
