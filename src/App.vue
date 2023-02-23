@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="relative overflow-hidden">
     <Header />
     <Hero />
     <AboutUs :id="$root.menuList[0].id" class="py-14 md:py-24" />

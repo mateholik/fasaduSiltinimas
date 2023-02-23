@@ -1,7 +1,7 @@
 <template>
   <section class="select-none">
     <div class="container">
-      <div class="flex items-center justify-between my-4">
+      <div class="flex items-center justify-between md:my-4">
         <img src="/img/logo.png" class="w-20 md:w-24" alt="" />
         <div class="hidden md:flex">
           <a :href="`tel:${$root.phone}`" class="flex mr-14">
@@ -25,7 +25,7 @@
           role="button"
           aria-controls="navigation"
         >
-          <div class="hamburger-box">
+          <div class="-mr-4 hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
         </div>
@@ -45,25 +45,22 @@
         </ul>
       </div>
     </nav>
-    <div v-if="mobileMenuOpen">
-      <nav class="absolute inset-0 z-10 blur-sm"></nav>
-      <div class="absolute inset-0 z-20 w-4/5 ml-auto bg-white">
+
+    <div class="">
+      <nav
+        class="absolute inset-0 z-10 duration-200"
+        :class="mobileMenuOpen ? 'bg-black opacity-50' : 'opacity-0 pointer-events-none'"
+      ></nav>
+      <div
+        class="absolute inset-0 z-20 w-4/5 ml-auto duration-200 transform bg-white"
+        :class="mobileMenuOpen ? 'opacity-100' : 'translate-x-full pointer-events-none'"
+      >
         <div
-          class="container flex items-center justify-between my-4"
+          class="container flex items-center justify-between md:my-4"
           style="box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)"
         >
           <img src="/img/logo.png" class="w-20 md:w-24" alt="" />
-          <div class="hidden md:flex">
-            <a href="tel:+370 6 7619 114" class="flex mr-14">
-              <img class="w-6 h-6 mr-[6px]" src="/img/phone.svg" alt="phone" />
-              +370 6 7619 114
-            </a>
-            <div class="flex">
-              <img class="w-6 h-6 mr-[6px]" src="/img/clock.svg" alt="clock" />
-              I-IV: 08:00 - 20:00
-              <span class="ml-4">V: 08:00 - 20:00</span>
-            </div>
-          </div>
+
           <div
             @click="mobileMenuOpen = !mobileMenuOpen"
             class="block outline-none hamburger hamburger--elastic md:hidden"
@@ -73,7 +70,7 @@
             role="button"
             aria-controls="navigation"
           >
-            <div class="hamburger-box">
+            <div class="-mr-4 hamburger-box">
               <div class="hamburger-inner"></div>
             </div>
           </div>
@@ -112,7 +109,7 @@
               class="flex items-center px-4 py-3 mb-2 text-white bg-[#3E3E3E]"
             >
               <img class="w-4 h-4 mr-2" src="/img/phone-white.svg" alt="/img/" />
-              facebook
+              {{ $root.facebook }}
             </a>
             <div class="flex px-4 py-3 mb-2 text-white bg-[#3E3E3E]">
               <img class="w-4 h-4 mr-2" src="/img/clock-white.svg" alt="/img/" />
@@ -140,15 +137,13 @@ export default {
     mobileMenuOpen: {
       immediate: true,
       handler(value) {
-        if (value) this.blurBody()
+        value
+          ? document.body.classList.add('overflow-hidden')
+          : document.body.classList.remove('overflow-hidden')
       },
     },
   },
   methods: {
-    blurBody() {
-      // console.log('test')
-      // document.body.classList.add('opacity-50')
-    },
     scrollToSection(sectionId) {
       const section = document.getElementById(sectionId)
       setTimeout(() => {
