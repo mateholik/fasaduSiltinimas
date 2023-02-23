@@ -6,8 +6,8 @@ Vue.config.productionTip = false
 
 new Vue({
   data: {
-    phone: '123-456-7890',
-    email: 'example@example.com',
+    phone: '+370 676 19 114',
+    email: 'info@fasadoapsiltinimas.lt',
     facebook: '',
     hours_one: 'I-IV: 08:00 - 20:00',
     hours_two: 'V: 08:00 - 20:00',

@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="relative overflow-hidden">
-    <Header />
+    <Header id="top" />
     <Hero />
     <AboutUs :id="$root.menuList[0].id" class="py-14 md:py-24" />
     <WhyUs class="py-14 md:py-24" />

@@ -4,17 +4,20 @@
       <div class="flex items-center justify-between md:my-4">
         <img src="/img/logo.png" class="w-20 md:w-24" alt="" />
         <div class="hidden md:flex">
-          <a :href="`tel:${$root.phone}`" class="flex mr-14">
+          <a
+            :href="`tel:${$root.phone}`"
+            class="flex duration-200 transform mr-14 hover:translate-x-1"
+          >
             <img class="w-6 h-6 mr-[6px]" src="/img/phone.svg" alt="phone" />
             {{ $root.phone }}
           </a>
-          <div class="flex">
-            <img class="w-6 h-6 mr-[6px]" src="/img/clock.svg" alt="clock" />
-            <div class="flex">
-              <span v-html="$root.hours_one" class="block mr-4"></span>
-              <span v-html="$root.hours_two"></span>
-            </div>
-          </div>
+          <a
+            :href="`mailto:${$root.email}`"
+            class="flex duration-200 transform mr-14 hover:translate-x-1"
+          >
+            <img class="w-6 h-6 mr-[6px]" src="/img/mail.svg" alt="mail" />
+            {{ $root.email }}
+          </a>
         </div>
         <div
           @click="mobileMenuOpen = !mobileMenuOpen"
@@ -46,7 +49,7 @@
       </div>
     </nav>
 
-    <div class="">
+    <div>
       <nav
         class="absolute inset-0 z-10 duration-200"
         :class="mobileMenuOpen ? 'bg-black opacity-50' : 'opacity-0 pointer-events-none'"
@@ -145,6 +148,7 @@ export default {
   },
   methods: {
     scrollToSection(sectionId) {
+      this.mobileMenuOpen = false
       const section = document.getElementById(sectionId)
       setTimeout(() => {
         section.scrollIntoView({ behavior: 'smooth' })

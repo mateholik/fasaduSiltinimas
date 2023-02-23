@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#0000000a]">
+  <section class="bg-[#0000000a]" ref="gallery">
     <div class="container">
       <h2
         class="font-semibold text-2xl md:text-[40px] md:leading-normal mb-6 md:mb-16 uppercase"
@@ -10,7 +10,7 @@
 
       <div class="grid grid-cols-1 gap-2 mb-8 -mx-4 md:grid-cols-3 md:mx-0">
         <div
-          class="bg-center bg-no-repeat bg-cover cursor-pointer aspect-square"
+          class="duration-200 bg-center bg-no-repeat bg-cover cursor-pointer aspect-square hover:opacity-90"
           v-for="(image, imageIndex) in visibleItems"
           :key="imageIndex"
           @click="index = imageIndex"
@@ -18,11 +18,11 @@
         ></div>
       </div>
       <div
-        class="flex items-center justify-end cursor-pointer"
+        class="flex items-center justify-end duration-200 transform cursor-pointer md:mb-6 hover:translate-x-1"
         @click="showAll = !showAll"
       >
         {{ ctaText }}
-        <img class="w-6 h-6 ml-2" src="/img/more.svg" alt="ziureti daugiau" />
+        <img class="w-6 h-6 ml-2" src="/img/more.svg" alt="toggle view more" />
       </div>
     </div>
   </section>
@@ -40,17 +40,48 @@ export default {
     return {
       showAll: false,
       items: [
-        'https://1.bp.blogspot.com/-7dVEfo-4z5w/YMi1T2TCzMI/AAAAAAAABoQ/lXMdAU8tAt0dJl4lUArP8ENfsob3Te62QCLcBGAsYHQ/s1335/IMG_20210615_171007.jpg',
-        'https://1.bp.blogspot.com/-kK7Fxm7U9o0/YN0bSIwSLvI/AAAAAAAACFk/aF4EI7XU_ashruTzTIpifBfNzb4thUivACLcBGAsYHQ/s16000/222.jpg',
-        'https://1.bp.blogspot.com/-7dVEfo-4z5w/YMi1T2TCzMI/AAAAAAAABoQ/lXMdAU8tAt0dJl4lUArP8ENfsob3Te62QCLcBGAsYHQ/s1335/IMG_20210615_171007.jpg',
-        'https://1.bp.blogspot.com/-kK7Fxm7U9o0/YN0bSIwSLvI/AAAAAAAACFk/aF4EI7XU_ashruTzTIpifBfNzb4thUivACLcBGAsYHQ/s16000/222.jpg',
-        'https://1.bp.blogspot.com/-7dVEfo-4z5w/YMi1T2TCzMI/AAAAAAAABoQ/lXMdAU8tAt0dJl4lUArP8ENfsob3Te62QCLcBGAsYHQ/s1335/IMG_20210615_171007.jpg',
-        'https://1.bp.blogspot.com/-kK7Fxm7U9o0/YN0bSIwSLvI/AAAAAAAACFk/aF4EI7XU_ashruTzTIpifBfNzb4thUivACLcBGAsYHQ/s16000/222.jpg',
-        'https://1.bp.blogspot.com/-7dVEfo-4z5w/YMi1T2TCzMI/AAAAAAAABoQ/lXMdAU8tAt0dJl4lUArP8ENfsob3Te62QCLcBGAsYHQ/s1335/IMG_20210615_171007.jpg',
-        'https://1.bp.blogspot.com/-kK7Fxm7U9o0/YN0bSIwSLvI/AAAAAAAACFk/aF4EI7XU_ashruTzTIpifBfNzb4thUivACLcBGAsYHQ/s16000/222.jpg',
+        '/img/gallery/img-1.jpg',
+        '/img/gallery/img-2.jpg',
+        '/img/gallery/img-3.jpg',
+        '/img/gallery/img-4.jpg',
+        '/img/gallery/img-5.jpg',
+        '/img/gallery/img-6.jpg',
+        '/img/gallery/img-7.jpg',
+        '/img/gallery/img-8.jpg',
+        '/img/gallery/img-9.jpg',
+        '/img/gallery/img-10.jpg',
+        '/img/gallery/img-11.jpg',
+        '/img/gallery/img-12.jpg',
+        '/img/gallery/img-13.jpg',
+        '/img/gallery/img-14.jpg',
+        '/img/gallery/img-15.jpg',
+        '/img/gallery/img-16.jpg',
+        '/img/gallery/img-17.jpg',
+        '/img/gallery/img-18.jpg',
+        '/img/gallery/img-19.jpg',
+        '/img/gallery/img-20.jpg',
+        '/img/gallery/img-21.jpg',
+        '/img/gallery/img-22.jpg',
+        '/img/gallery/img-23.jpg',
+        '/img/gallery/img-24.jpg',
+        '/img/gallery/img-25.jpg',
+        '/img/gallery/img-26.jpg',
+        '/img/gallery/img-27.jpg',
+        '/img/gallery/img-28.jpg',
+        '/img/gallery/img-29.jpg',
+        '/img/gallery/img-30.jpg',
+        '/img/gallery/img-31.jpg',
+        '/img/gallery/img-32.jpg',
       ],
       index: null,
     }
+  },
+  watch: {
+    showAll(val) {
+      if (!val) {
+        this.$refs.gallery.scrollIntoView()
+      }
+    },
   },
   computed: {
     visibleItems() {

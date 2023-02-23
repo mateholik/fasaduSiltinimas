@@ -2,12 +2,14 @@
   <section>
     <div class="container">
       <h2
-        class="font-semibold text-2xl md:text-[40px] md:leading-normal mb-6 md:mb-16 uppercase"
+        class="font-semibold text-2xl md:text-[40px] md:leading-normal mb-10 md:mb-16 uppercase"
       >
         Teikiamos paslaugos klientams
       </h2>
 
-      <div class="mb-10 md:mb-24 md:items-center md:flex md:space-x-12">
+      <div
+        class="flex flex-col-reverse md:flex-row md:mb-24 md:items-center md:space-x-12"
+      >
         <div class="mb-10 md:w-1/2 md:mb-0">
           <ul class="md:text-xl">
             <li
@@ -20,15 +22,15 @@
             </li>
           </ul>
         </div>
-        <div class="-mx-4 md:mx-auto md:w-1/2">
+        <div class="mb-10 -mx-4 md:mx-auto md:w-1/2 md:mb-0">
           <img class="w-full" src="/img/services1.jpeg" alt="paslaugos" />
         </div>
       </div>
-      <div class="flex flex-col-reverse md:flex-row md:items-center md:space-x-12">
-        <div class="-mx-4 md:mx-auto md:w-1/2">
+      <div class="flex flex-col md:flex-row md:items-center md:space-x-12">
+        <div class="mb-10 -mx-4 md:mx-auto md:w-1/2 md:mb-0">
           <img class="w-full" src="/img/services2.jpeg" alt="paslaugos" />
         </div>
-        <div class="mb-10 md:w-1/2 md:mb-0">
+        <div class="md:w-1/2">
           <ul class="md:text-xl">
             <li
               class="flex items-center mb-2 md:mb-6 last:mb-0"

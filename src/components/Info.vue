@@ -7,22 +7,27 @@
         fasado šiltinimas
       </h2>
       <p class="mb-4">
-        Lietuvoje šilumos izoliacijai dažniausiai naudojamas polistirenas, neoporas ir
-        mineralinė vata. Statant nekilnojamajį turtą susimąstome apie jo estetinį vaizdą,
-        ilgaamžiškumą ir eksplotacinius kaštus. Paminėtus dalykus įtakoja kokybiškas
-        fasado apšiltinimas.
+        Lietuvoje šilumos izoliacijai dažniausiai naudojamas
+        <span class="font-semibold">polistirenas, neoporas ir mineralinė vata</span>.
+        Statant nekilnojamajį turtą susimąstome apie jo
+        <span class="font-semibold"
+          >estetinį vaizdą, ilgaamžiškumą ir eksplotacinius kaštus</span
+        >. Paminėtus dalykus įtakoja kokybiškas fasado apšiltinimas.
       </p>
-      <p class="mb-16">
+      <p class="mb-10 md:mb-16">
         Todėl tai yra labai svarbus statybų etapas. Namų renovacijoje fasado šiltinimas
         yra vienas svarbiausių ir didžiausią paklausą turinčių darbų. Fasado apdailai
-        naudojami mineraliniai, silikoniniai, akriliniai dekoratyviniai tinkai. Naudojami
-        dviejų struktūrų tinkai: sąmanėlė ir lietutis.
+        naudojami
+        <span class="font-semibold"
+          >mineraliniai, silikoniniai, akriliniai dekoratyviniai tinkai</span
+        >. Naudojami dviejų struktūrų tinkai:
+        <span class="font-semibold">sąmanėlė ir lietutis</span>.
       </p>
 
       <h3 class="mb-10 text-2xl font-semibold uppercase md:mb-16">
         Fasado šiltinimo nauda
       </h3>
-      <div class="grid grid-cols-2 mb-24 md:grid-cols-4">
+      <div class="grid grid-cols-2 mb-16 md:mb-24 md:grid-cols-4">
         <div
           v-for="(item, index) in items"
           :key="item.icon"

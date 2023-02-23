@@ -16,12 +16,13 @@
           <p class="font-medium text-lg md:text-[28px] md:leading-normal mb-8 md:mb-10">
             Kokybiški pamatų ir fasadų apšiltinimo darbai pagal Jūsų norus bei lūkesčius
           </p>
-          <a
-            href="#gallery"
-            class="px-10 py-3 text-lg font-semibold bg-white text-[#222] hover:bg-[#DADADA] duration-200"
+          <div
+            @click="scrollToSection($root.menuList[2].id)"
+            class="cursor-pointer inline-block px-6 md:px-10 py-2 md:py-3 text-sm md:text-lg font-semibold bg-white text-[#222] hover:bg-[#DADADA] duration-200 leading-6"
             style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5)"
-            >GALERIJA</a
           >
+            GALERIJA
+          </div>
         </div>
       </div>
     </div>
@@ -31,6 +32,14 @@
 <script>
 export default {
   name: 'Hero',
+  methods: {
+    scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId)
+      setTimeout(() => {
+        section.scrollIntoView({ behavior: 'smooth' })
+      }, 80)
+    },
+  },
 }
 </script>
 
