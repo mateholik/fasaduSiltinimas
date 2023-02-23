@@ -65,6 +65,8 @@
             :src="item.icon"
             class="block w-10 h-10 md:w-16 md:h-16 mx-auto mt-6 md:mt-[60px] mb-3 mb:mb-6"
             alt="icon"
+            width="64"
+            height="64"
           />
           <div
             v-html="item.text"
@@ -77,7 +79,13 @@
       </h3>
       <div class="md:flex md:flex-row-reverse md:items-center">
         <div class="block mb-10 md:mb-0 md:w-1/2 md:py-4 md:bg-[#f1f1f1]">
-          <img src="/img/info.png" alt="Fasado šiltinimo schema" class="md:mx-auto" />
+          <img
+            src="/img/info.png"
+            alt="Fasado šiltinimo schema"
+            class="md:mx-auto"
+            width="256"
+            height="390"
+          />
         </div>
         <ul class="md:w-1/2">
           <li

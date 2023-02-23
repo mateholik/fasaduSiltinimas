@@ -22,7 +22,13 @@
         @click="showAll = !showAll"
       >
         {{ ctaText }}
-        <img class="w-6 h-6 ml-2" src="/img/more.svg" alt="toggle view more" />
+        <img
+          width="24"
+          height="24"
+          class="w-6 h-6 ml-2"
+          src="/img/more.svg"
+          alt="toggle view more"
+        />
       </div>
     </div>
   </section>

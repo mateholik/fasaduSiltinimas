@@ -11,14 +11,26 @@
               :href="`tel:${$root.phone}`"
               class="flex items-center mb-4 duration-200 transform hover:translate-x-1"
             >
-              <img class="w-4 h-4 mr-2 md:w-6 md:h-6" src="/img/phone.svg" alt="phone" />
+              <img
+                width="24"
+                height="24"
+                class="w-4 h-4 mr-2 md:w-6 md:h-6"
+                src="/img/phone.svg"
+                alt="phone"
+              />
               {{ $root.phone }}
             </a>
             <a
               :href="`mailto:${$root.email}`"
               class="flex items-center mb-4 duration-200 transform hover:translate-x-1"
             >
-              <img class="w-4 h-4 mr-2 md:w-6 md:h-6" src="/img/mail.svg" alt="mail" />
+              <img
+                width="24"
+                height="24"
+                class="w-4 h-4 mr-2 md:w-6 md:h-6"
+                src="/img/mail.svg"
+                alt="mail"
+              />
               {{ $root.email }}
             </a>
             <a
@@ -27,11 +39,23 @@
               target="_blank"
               class="flex mb-4 duration-200 transform hover:translate-x-1"
             >
-              <img class="w-4 h-4 mr-2 md:w-6 md:h-6" src="/img/fb.svg" alt="facebook" />
+              <img
+                width="24"
+                height="24"
+                class="w-4 h-4 mr-2 md:w-6 md:h-6"
+                src="/img/fb.svg"
+                alt="facebook"
+              />
               {{ $root.facebook }}
             </a>
             <div class="flex mb-4">
-              <img class="w-4 h-4 mr-2 md:w-6 md:h-6" src="/img/clock.svg" alt="clock" />
+              <img
+                width="24"
+                height="24"
+                class="w-4 h-4 mr-2 md:w-6 md:h-6"
+                src="/img/clock.svg"
+                alt="clock"
+              />
               <div class="text-right">
                 <div v-html="$root.hours_one"></div>
                 <div v-html="$root.hours_two"></div>
@@ -42,10 +66,17 @@
             src="/img/sertifikatas.png"
             alt="sertifikatas"
             class="max-w-xs mx-auto mt-16 md:mx-0"
+            width="320"
+            height="317"
           />
         </div>
         <div>
-          <img src="/img/sertifikatas-pilnas.jpeg" alt="sertifikatas" />
+          <img
+            width="616"
+            height="877"
+            src="/img/sertifikatas-pilnas.jpeg"
+            alt="sertifikatas"
+          />
         </div>
       </div>
     </div>

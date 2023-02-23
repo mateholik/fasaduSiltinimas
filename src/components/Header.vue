@@ -2,20 +2,32 @@
   <section class="select-none">
     <div class="container">
       <div class="flex items-center justify-between md:my-4">
-        <img src="/img/logo.png" class="w-20 md:w-24" alt="" />
+        <img src="/img/logo.png" class="w-20 md:w-24" alt="logo" width="96" height="54" />
         <div class="hidden md:flex">
           <a
             :href="`tel:${$root.phone}`"
             class="flex duration-200 transform mr-14 hover:translate-x-1"
           >
-            <img class="w-6 h-6 mr-[6px]" src="/img/phone.svg" alt="phone" />
+            <img
+              width="24"
+              height="24"
+              class="w-6 h-6 mr-[6px]"
+              src="/img/phone.svg"
+              alt="phone"
+            />
             {{ $root.phone }}
           </a>
           <a
             :href="`mailto:${$root.email}`"
             class="flex duration-200 transform mr-14 hover:translate-x-1"
           >
-            <img class="w-6 h-6 mr-[6px]" src="/img/mail.svg" alt="mail" />
+            <img
+              width="24"
+              height="24"
+              class="w-6 h-6 mr-[6px]"
+              src="/img/mail.svg"
+              alt="mail"
+            />
             {{ $root.email }}
           </a>
         </div>
@@ -62,7 +74,7 @@
           class="container flex items-center justify-between md:my-4"
           style="box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)"
         >
-          <img src="/img/logo.png" class="w-20 md:w-24" alt="" />
+          <img width="80" height="46" src="/img/logo.png" class="w-20 md:w-24" alt="" />
 
           <div
             @click="mobileMenuOpen = !mobileMenuOpen"
@@ -95,14 +107,26 @@
               :href="`tel:${$root.phone}`"
               class="flex items-center px-4 py-3 mb-2 text-white bg-[#3E3E3E]"
             >
-              <img class="w-4 h-4 mr-2" src="/img/phone-white.svg" alt="/img/" />
+              <img
+                width="16"
+                height="16"
+                class="w-4 h-4 mr-2"
+                src="/img/phone-white.svg"
+                alt="/img/"
+              />
               {{ $root.phone }}
             </a>
             <a
               :href="`mailto:${$root.email}`"
               class="flex items-center px-4 py-3 mb-2 text-white bg-[#3E3E3E]"
             >
-              <img class="w-4 h-4 mr-2" src="/img/mail-white.svg" alt="/img/" />
+              <img
+                width="16"
+                height="16"
+                class="w-4 h-4 mr-2"
+                src="/img/mail-white.svg"
+                alt="/img/"
+              />
               {{ $root.email }}
             </a>
             <a
@@ -111,11 +135,23 @@
               target="_blank"
               class="flex items-center px-4 py-3 mb-2 text-white bg-[#3E3E3E]"
             >
-              <img class="w-4 h-4 mr-2" src="/img/phone-white.svg" alt="/img/" />
+              <img
+                width="16"
+                height="16"
+                class="w-4 h-4 mr-2"
+                src="/img/phone-white.svg"
+                alt="/img/"
+              />
               {{ $root.facebook }}
             </a>
             <div class="flex px-4 py-3 mb-2 text-white bg-[#3E3E3E]">
-              <img class="w-4 h-4 mr-2" src="/img/clock-white.svg" alt="/img/" />
+              <img
+                width="16"
+                height="16"
+                class="w-4 h-4 mr-2"
+                src="/img/clock-white.svg"
+                alt="/img/"
+              />
               <div>
                 <span v-html="$root.hours_one"></span> <br />
                 <span v-html="$root.hours_two"></span>

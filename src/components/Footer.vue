@@ -8,6 +8,8 @@
             alt="logo"
             @click="scrollToSection('top')"
             class="cursor-pointer"
+            width="99"
+            height="56"
           />
         </div>
         <div
@@ -35,6 +37,8 @@
                   class="w-4 h-4 mr-2 md:w-6 md:h-6"
                   src="/img/phone-white.svg"
                   alt="phone"
+                  width="24"
+                  height="24"
                 />
                 {{ $root.phone }}
               </a>
@@ -46,6 +50,8 @@
                   class="w-4 h-4 mr-2 md:w-6 md:h-6"
                   src="/img/mail-white.svg"
                   alt="mail"
+                  width="24"
+                  height="24"
                 />
                 {{ $root.email }}
               </a>
@@ -59,6 +65,8 @@
                   class="w-4 h-4 mr-2 md:w-6 md:h-6"
                   src="/img/fb-white.svg"
                   alt="facebook"
+                  width="24"
+                  height="24"
                 />
                 {{ $root.facebook }}
               </a>
@@ -70,6 +78,8 @@
                 class="w-4 h-4 mr-2 md:w-6 md:h-6"
                 src="/img/clock-white.svg"
                 alt="clock"
+                width="24"
+                height="24"
               />
               <div class="text-right">
                 <div v-html="$root.hours_one"></div>

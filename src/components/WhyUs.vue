@@ -55,6 +55,8 @@
             :src="item.icon"
             class="block w-10 h-10 md:w-16 md:h-16 mx-auto mt-6 md:mt-[60px] mb-3 mb:mb-6"
             alt="icon"
+            width="64"
+            height="64"
           />
           <div
             v-html="item.text"

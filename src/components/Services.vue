@@ -17,18 +17,30 @@
               v-for="(item, index) in itemsOne"
               :key="index"
             >
-              <img src="/img/check.svg" alt="check" class="mr-2" />
+              <img src="/img/check.svg" alt="check" class="mr-2" width="16" height="16" />
               <span v-html="item"></span>
             </li>
           </ul>
         </div>
         <div class="mb-10 -mx-4 md:mx-auto md:w-1/2 md:mb-0">
-          <img class="w-full" src="/img/services1.jpeg" alt="paslaugos" />
+          <img
+            class="w-full"
+            src="/img/services1.jpeg"
+            alt="paslaugos"
+            width="600"
+            height="456"
+          />
         </div>
       </div>
       <div class="flex flex-col md:flex-row md:items-center md:space-x-12">
         <div class="mb-10 -mx-4 md:mx-auto md:w-1/2 md:mb-0">
-          <img class="w-full" src="/img/services2.jpeg" alt="paslaugos" />
+          <img
+            class="w-full"
+            src="/img/services2.jpeg"
+            alt="paslaugos"
+            width="600"
+            height="456"
+          />
         </div>
         <div class="md:w-1/2">
           <ul class="md:text-xl">
@@ -37,7 +49,7 @@
               v-for="(item, index) in itemsTwo"
               :key="index"
             >
-              <img src="/img/check.svg" alt="check" class="mr-2" />
+              <img src="/img/check.svg" alt="check" class="mr-2" width="16" height="16" />
               <span v-html="item"></span>
             </li>
           </ul>

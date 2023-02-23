@@ -13,20 +13,32 @@
           </p>
           <ul class="md:text-xl">
             <li class="flex items-center mb-2 md:mb-6">
-              <img src="/img/check.svg" alt="check" class="mr-2" /> Individualių namų
-              fasadų apšiltinimas
+              <img width="16" height="16" src="/img/check.svg" alt="check" class="mr-2" />
+              Individualių namų fasadų apšiltinimas
             </li>
             <li class="flex items-center mb-2 md:mb-6">
-              <img src="/img/check.svg" alt="check" class="mr-2" /> Pamatų apšiltinimas
+              <img width="16" height="16" src="/img/check.svg" alt="check" class="mr-2" />
+              Pamatų apšiltinimas
             </li>
             <li class="flex items-center mb-2 md:mb-6">
-              <img src="/img/check.svg" alt="check" class="mr-2" />Renovacija bei
-              dekoravimas
+              <img
+                width="16"
+                height="16"
+                src="/img/check.svg"
+                alt="check"
+                class="mr-2"
+              />Renovacija bei dekoravimas
             </li>
           </ul>
         </div>
         <div class="-mx-4 md:mx-auto md:w-1/2">
-          <img class="w-full" src="/img/about.jpeg" alt="apie mus" />
+          <img
+            class="w-full"
+            src="/img/about.jpeg"
+            alt="apie mus"
+            width="600"
+            height="458"
+          />
         </div>
       </div>
     </div>
