@@ -7,5 +7,7 @@
     <Services class="py-14 md:py-24" />
     <Gallery class="py-14 md:py-24" />
     <Info class="py-14 md:py-24" />
+    <Contacts class="py-14 md:py-24" />
+    <Footer />
   </div>
 </template>

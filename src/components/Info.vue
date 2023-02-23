@@ -78,10 +78,10 @@
           <li
             v-for="(item, index) in points"
             :key="item"
-            class="flex items-center bg-[#3E3E3E] px-4 py-3 mb-2 last:mb-0 md:max-w-sm"
+            class="flex items-center bg-[#3E3E3E] px-4 py-3 mb-2 md:mb-4 last:mb-0 md:max-w-sm md:text-2xl"
           >
             <span
-              class="w-[18px] h-[18px] bg-white text-[ #3E3E3E] text-sm font-medium flex justify-center items-center mr-2 rounded-full"
+              class="w-[18px] h-[18px] bg-white text-[#3E3E3E] text-sm font-medium flex justify-center items-center mr-2 rounded-full"
               >{{ index + 1 }}</span
             >
             <span class="text-white medium">{{ item }}</span>

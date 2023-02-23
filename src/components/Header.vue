@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between my-4">
         <img src="/img/logo.png" class="w-20 md:w-24" alt="" />
         <div class="hidden md:flex">
-          <a href="tel:+370 6 7619 114" class="flex mr-14">
+          <a :href="`tel:${$root.phone}`" class="flex mr-14">
             <img class="w-6 h-6 mr-[6px]" src="/img/phone.svg" alt="phone" />
             {{ $root.phone }}
           </a>
@@ -134,18 +134,23 @@ export default {
       mobileMenuOpen: false,
       menuList: [
         {
+          id: 'apieMus',
           name: 'Apie mus',
         },
         {
+          id: 'paslaugos',
           name: 'Paslaugos',
         },
         {
+          id: 'galerija',
           name: 'Galerija',
         },
         {
+          id: 'fasadoSiltinimas',
           name: 'Fasado šiltinimas',
         },
         {
+          id: 'kontaktai',
           name: 'Kontaktai',
         },
       ],
