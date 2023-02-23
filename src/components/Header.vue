@@ -35,8 +35,9 @@
       <div class="container">
         <ul class="flex">
           <li
-            v-for="item in menuList"
-            :key="item.name"
+            v-for="item in $root.menuList"
+            :key="item.id"
+            @click="scrollToSection(item.id)"
             class="text-white py-2 px-3 mr-14 hover:bg-[#7A7A7A] duration-200 cursor-pointer last:mr-0"
           >
             {{ item.name }}
@@ -79,8 +80,9 @@
         </div>
         <ul class="my-7">
           <li
-            v-for="item in menuList"
-            :key="item.name"
+            v-for="item in $root.menuList"
+            :key="item.id"
+            @click="scrollToSection(item.id)"
             class="py-3 px-6 hover:bg-[#7A7A7A] hover:text-white duration-200 cursor-pointer"
           >
             {{ item.name }}
@@ -132,28 +134,6 @@ export default {
   data() {
     return {
       mobileMenuOpen: false,
-      menuList: [
-        {
-          id: 'apieMus',
-          name: 'Apie mus',
-        },
-        {
-          id: 'paslaugos',
-          name: 'Paslaugos',
-        },
-        {
-          id: 'galerija',
-          name: 'Galerija',
-        },
-        {
-          id: 'fasadoSiltinimas',
-          name: 'Fasado šiltinimas',
-        },
-        {
-          id: 'kontaktai',
-          name: 'Kontaktai',
-        },
-      ],
     }
   },
   watch: {
@@ -168,6 +148,12 @@ export default {
     blurBody() {
       // console.log('test')
       // document.body.classList.add('opacity-50')
+    },
+    scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId)
+      setTimeout(() => {
+        section.scrollIntoView({ behavior: 'smooth' })
+      }, 80)
     },
   },
 }

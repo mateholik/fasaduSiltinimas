@@ -11,8 +11,9 @@
           <div class="mb-9 md:mb-0">
             <ul class="text-white">
               <li
-                v-for="item in menuList"
+                v-for="item in $root.menuList"
                 :key="item.id"
+                @click="scrollToSection(item.id)"
                 class="mb-5 font-medium md:mb-6 last:mb-0"
               >
                 {{ item.name }}
@@ -77,31 +78,17 @@
 <script>
 export default {
   name: 'Footer',
-  data() {
-    return {
-      menuList: [
-        {
-          id: 'apieMus',
-          name: 'Apie mus',
-        },
-        {
-          id: 'paslaugos',
-          name: 'Paslaugos',
-        },
-        {
-          id: 'galerija',
-          name: 'Galerija',
-        },
-        {
-          id: 'fasadoSiltinimas',
-          name: 'Fasado šiltinimas',
-        },
-        {
-          id: 'kontaktai',
-          name: 'Kontaktai',
-        },
-      ],
-    }
+  methods: {
+    blurBody() {
+      // console.log('test')
+      // document.body.classList.add('opacity-50')
+    },
+    scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId)
+      setTimeout(() => {
+        section.scrollIntoView({ behavior: 'smooth' })
+      }, 80)
+    },
   },
 }
 </script>
