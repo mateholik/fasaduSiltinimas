@@ -1,6 +1,5 @@
 {
-  "name": "admin",
-  "description": "Boilerplate Repository with FAST load time using vite and untility css using tailwind css support.",
+  "name": "vladis",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,11 +9,6 @@
     "build:prod": "vite build --mode prod",
     "lint": "eslint --fix --ignore-path .gitignore"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mayank30/vite-tailwind-vue2"
-  },
-  "author": "Mayank Jhawar <mayankjhawar18@gmail.com>",
   "license": "MIT",
   "keywords": [
     "template",
@@ -29,9 +23,7 @@
     "hamburgers": "^1.2.1",
     "sass": "^1.58.3",
     "vue": "^2.6.11",
-    "vue-cool-lightbox": "^2.7.5",
-    "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vue-cool-lightbox": "^2.7.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",

@@ -63,6 +63,7 @@
 
     <div>
       <nav
+        id="navigation"
         class="absolute inset-0 z-10 duration-200"
         :class="mobileMenuOpen ? 'bg-black opacity-50' : 'opacity-0 pointer-events-none'"
       ></nav>
